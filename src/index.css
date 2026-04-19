@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+@theme {
+  --color-cream: #e7dcd1;
+  --color-near-black: #0a0a0a;
+  --color-burgundy: #620608;
+  --color-dusty-blue: #94b1c8;
+  --color-white: #ffffff;
+
+  --font-display: "Playfair Display", Georgia, serif;
+  --font-accent: "Times New Roman", Times, serif;
+  --font-body: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+@layer base {
+  body {
+    @apply font-body bg-cream text-near-black antialiased overflow-x-hidden;
+  }
+
+  /* Global Grain Texture */
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+    opacity: 0.04;
+    pointer-events: none;
+    z-index: 9999;
+  }
+
+  /* Lenis smooth scrolling base setup */
+  html.lenis, html.lenis body {
+    height: auto;
+  }
+  .lenis.lenis-smooth {
+    scroll-behavior: auto !important;
+  }
+  .lenis.lenis-smooth [data-lenis-prevent] {
+    overscroll-behavior: contain;
+  }
+  .lenis.lenis-stopped {
+    overflow: hidden;
+  }
+  .lenis.lenis-smooth iframe {
+    pointer-events: none;
+  }
+}
+
