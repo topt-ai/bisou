@@ -46,51 +46,41 @@ export function Galeria() {
         <div className="grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-8">
           
           {/* Row 1 */}
-          <div className="gallery-item md:col-span-7 h-[350px] md:h-[500px] bg-cream border border-dashed border-dusty-blue/40 rounded flex items-center justify-center hover:border-burgundy hover:border-solid hover:border-[2px] transition-all duration-300 hover:scale-[1.02] relative overflow-hidden group">
-            {/* Replace bg placeholder with <img src="..." /> */}
-            <p className="font-body font-light text-dusty-blue text-[12px] uppercase z-10 transition-opacity duration-300 group-hover:opacity-0">
-              [ imagen ]
-            </p>
+          <div className="gallery-item md:col-span-7 h-[350px] md:h-[500px] bg-cream rounded border-0 relative overflow-hidden group">
+            <img src="/bisou1.webp" alt="Galeria 1" className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
           </div>
-          <div className="gallery-item md:col-span-5 h-[400px] md:h-[600px] md:translate-y-10 bg-cream border border-dashed border-dusty-blue/40 rounded flex items-center justify-center hover:border-burgundy hover:border-solid hover:border-[2px] transition-all duration-300 hover:scale-[1.02] relative overflow-hidden group">
-            {/* Replace bg placeholder with <img src="..." /> */}
-            <p className="font-body font-light text-dusty-blue text-[12px] uppercase z-10 transition-opacity duration-300 group-hover:opacity-0">
-              [ imagen ]
-            </p>
+          <div className="gallery-item md:col-span-5 h-[400px] md:h-[600px] md:translate-y-10 bg-cream rounded border-0 relative overflow-hidden group">
+            <img src="/bisou2.webp" alt="Galeria 2" className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
           </div>
 
           {/* Row 2 */}
-          <div className="gallery-item md:col-span-4 h-[350px] md:h-[400px] bg-cream border border-dashed border-dusty-blue/40 rounded flex items-center justify-center hover:border-burgundy hover:border-solid hover:border-[2px] transition-all duration-300 hover:scale-[1.02] relative overflow-hidden group mt-6 md:mt-0">
-            {/* Replace bg placeholder with <img src="..." /> */}
-            <p className="font-body font-light text-dusty-blue text-[12px] uppercase z-10 transition-opacity duration-300 group-hover:opacity-0">
-              [ imagen ]
-            </p>
+          <div className="gallery-item md:col-span-4 h-[350px] md:h-[400px] bg-cream rounded border-0 relative overflow-hidden group mt-6 md:mt-0">
+            <img src="/bisou3.webp" alt="Galeria 3" className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
           </div>
-          <div className="gallery-item md:col-span-8 h-[300px] md:h-[350px] md:-translate-y-[30px] bg-cream border border-dashed border-dusty-blue/40 rounded flex items-center justify-center hover:border-burgundy hover:border-solid hover:border-[2px] transition-all duration-300 hover:scale-[1.02] relative overflow-hidden group mb-6 md:mb-0">
-            {/* Replace bg placeholder with <img src="..." /> */}
-            <p className="font-body font-light text-dusty-blue text-[12px] uppercase z-10 transition-opacity duration-300 group-hover:opacity-0">
-              [ imagen ]
-            </p>
+          <div className="gallery-item md:col-span-8 h-[300px] md:h-[350px] md:-translate-y-[30px] bg-cream rounded border-0 relative overflow-hidden group mb-6 md:mb-0">
+            <img src="/bisou4.webp" alt="Galeria 4" className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
           </div>
 
           {/* Row 3 */}
-          <div className="gallery-item md:col-span-3 h-[300px] md:h-[380px] bg-cream border border-dashed border-dusty-blue/40 rounded flex items-center justify-center hover:border-burgundy hover:border-solid hover:border-[2px] transition-all duration-300 hover:scale-[1.02] relative overflow-hidden group">
-            {/* Replace bg placeholder with <img src="..." /> */}
-            <p className="font-body font-light text-dusty-blue text-[12px] uppercase z-10 transition-opacity duration-300 group-hover:opacity-0">
-              [ imagen ]
-            </p>
+          <div className="gallery-item md:col-span-3 h-[300px] md:h-[380px] bg-cream rounded border-0 relative overflow-hidden group">
+            <img src="/bisou5.webp" alt="Galeria 5" className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
           </div>
-          <div className="gallery-item md:col-span-6 h-[300px] md:h-[420px] bg-cream border border-dashed border-dusty-blue/40 rounded flex items-center justify-center hover:border-burgundy hover:border-solid hover:border-[2px] transition-all duration-300 hover:scale-[1.02] relative overflow-hidden group">
-            {/* Replace bg placeholder with <img src="..." /> */}
-            <p className="font-body font-light text-dusty-blue text-[12px] uppercase z-10 transition-opacity duration-300 group-hover:opacity-0">
-              [ imagen ]
-            </p>
+          <div className="gallery-item md:col-span-6 h-[300px] md:h-[420px] bg-cream rounded border-0 relative overflow-hidden group">
+            <img src="/bisou6.webp" alt="Galeria 6" className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
           </div>
-          <div className="gallery-item md:col-span-3 h-[300px] md:h-[350px] md:rotate-1 md:translate-y-4 bg-cream border border-dashed border-dusty-blue/40 rounded flex items-center justify-center hover:border-burgundy hover:border-solid hover:border-[2px] transition-all duration-300 hover:scale-[1.02] relative overflow-hidden group">
-            {/* Replace bg placeholder with <img src="..." /> */}
-            <p className="font-body font-light text-dusty-blue text-[12px] uppercase z-10 transition-opacity duration-300 group-hover:opacity-0">
-              [ imagen ]
-            </p>
+          <div className="gallery-item md:col-span-3 h-[300px] md:h-[350px] md:rotate-1 md:translate-y-4 bg-cream rounded border-0 relative overflow-hidden group">
+            <img src="/bisou7.webp" alt="Galeria 7" className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+          </div>
+
+          {/* Row 4 */}
+          <div className="gallery-item md:col-span-5 h-[300px] md:h-[450px] bg-cream rounded border-0 relative overflow-hidden group mt-6 md:mt-0">
+            <img src="/bisou9.webp" alt="Galeria 9" className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+          </div>
+          <div className="gallery-item md:col-span-4 h-[350px] md:h-[380px] md:-translate-y-8 bg-cream rounded border-0 relative overflow-hidden group mb-6 md:mb-0">
+            <img src="/bisou10.webp" alt="Galeria 10" className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+          </div>
+          <div className="gallery-item md:col-span-3 h-[300px] md:h-[400px] md:translate-y-4 bg-cream rounded border-0 relative overflow-hidden group">
+            <img src="/bisou11.webp" alt="Galeria 11" className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
           </div>
 
         </div>

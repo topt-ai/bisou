@@ -73,23 +73,23 @@ export function Videos() {
           
           {/* Phone 1 (Hidden on mobile) */}
           <div className="phone-frame hidden md:flex flex-col items-center justify-center w-[220px] aspect-[9/16] rounded-[32px] border-[3px] border-white/15 bg-white/[0.04] shadow-[0_24px_60px_rgba(0,0,0,0.5)] -rotate-[4deg] translate-y-[20px] transition-all duration-[400ms] hover:scale-104 hover:rotate-0 hover:border-white/40 cursor-pointer overflow-hidden relative group">
-            <Play className="w-10 h-10 text-white/50 mb-2 group-hover:scale-110 group-hover:text-white transition-all" />
-            <span className="font-body font-light text-[11px] text-white/30">Video próximamente</span>
-            {/* Replace with <video> tag: autoplay muted loop playsInline */}
+            <video className="absolute inset-0 w-full h-full object-cover z-0" autoPlay muted loop playsInline>
+              <source src="/videobisou1.mp4" type="video/mp4" />
+            </video>
           </div>
 
           {/* Phone 2 (Centered, visible on all) */}
           <div className="phone-frame flex flex-col items-center justify-center w-[280px] md:w-[220px] aspect-[9/16] rounded-[32px] border-[3px] border-white/15 bg-white/[0.04] shadow-[0_24px_60px_rgba(0,0,0,0.5)] rotate-0 -translate-y-[10px] transition-all duration-[400ms] hover:scale-104 hover:border-white/40 cursor-pointer overflow-hidden relative group">
-            <Play className="w-10 h-10 text-white/50 mb-2 group-hover:scale-110 group-hover:text-white transition-all" />
-            <span className="font-body font-light text-[11px] text-white/30">Video próximamente</span>
-            {/* Replace with <video> tag: autoplay muted loop playsInline */}
+            <video className="absolute inset-0 w-full h-full object-cover z-0" autoPlay muted loop playsInline>
+              <source src="/videobisou2.mp4" type="video/mp4" />
+            </video>
           </div>
 
           {/* Phone 3 (Hidden on mobile) */}
           <div className="phone-frame hidden md:flex flex-col items-center justify-center w-[220px] aspect-[9/16] rounded-[32px] border-[3px] border-white/15 bg-white/[0.04] shadow-[0_24px_60px_rgba(0,0,0,0.5)] rotate-[3deg] translate-y-[15px] transition-all duration-[400ms] hover:scale-104 hover:rotate-0 hover:border-white/40 cursor-pointer overflow-hidden relative group">
-            <Play className="w-10 h-10 text-white/50 mb-2 group-hover:scale-110 group-hover:text-white transition-all" />
-            <span className="font-body font-light text-[11px] text-white/30">Video próximamente</span>
-            {/* Replace with <video> tag: autoplay muted loop playsInline */}
+            <video className="absolute inset-0 w-full h-full object-cover z-0" autoPlay muted loop playsInline>
+              <source src="/videobisou3.mp4" type="video/mp4" />
+            </video>
           </div>
 
         </div>

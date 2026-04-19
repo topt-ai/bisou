@@ -44,7 +44,7 @@ export function Hero() {
     <section ref={containerRef} className="relative w-full h-[100dvh] bg-near-black overflow-hidden flex items-end px-[20px] md:px-[80px] pb-[80px]">
       {/* Background Image Container */}
       <div className="absolute inset-0 z-0">
-        <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&q=80&w=1200')] bg-cover bg-center bg-no-repeat"></div>
+        <div className="absolute inset-0 bg-[url('/hero-bg.webp')] bg-cover bg-center bg-no-repeat"></div>
         {/* Gradients to match HTML */}
         <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0acc] via-[#0a0a0a00] to-transparent bg-[length:100%_60%] bg-bottom bg-no-repeat"></div>
       </div>
@@ -59,7 +59,7 @@ export function Hero() {
         </div>
 
         {/* Main Headline */}
-        <h1 className="split-headline font-display text-white text-[52px] md:text-[92px] leading-[0.9] tracking-[-0.02em] mb-[24px] whitespace-pre-wrap">
+        <h1 className="split-headline font-display text-white text-[52px] md:text-[92px] leading-[1.1] tracking-normal mb-[24px] whitespace-pre-wrap">
           <SplitText text="Un lugar" className="block" />
           <SplitText text="para quedarse." className="block" />
         </h1>

@@ -5,7 +5,7 @@ export const SplitText = ({ text, className }: { text: string; className?: strin
   return (
     <span className={className}>
       {words.map((word, wordIndex) => (
-        <span key={`word-${wordIndex}`} className="inline-flex overflow-hidden pb-1">
+        <span key={`word-${wordIndex}`} className="inline-flex overflow-hidden py-4 -my-4">
           {word.split('').map((char, charIndex) => (
             <span key={`char-${wordIndex}-${charIndex}`} className="char inline-block whitespace-pre">
               {char}

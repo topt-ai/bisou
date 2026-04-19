@@ -82,14 +82,9 @@ export function Nosotros() {
         <div className="w-full md:w-[45%] flex flex-col items-center">
           <div 
             ref={rightColRef}
-            className="w-full max-w-[420px] aspect-[4/5] bg-cream border border-dashed border-dusty-blue/50 rounded-lg relative flex items-center justify-center -rotate-2"
+            className="w-full max-w-[420px] aspect-[4/5] bg-cream rounded-lg relative flex items-center justify-center -rotate-2 overflow-hidden border-0 shadow-xl"
           >
-            {/* Real photo dropzone */}
-            {/* <img src="..." alt="Interior BISOU" className="absolute inset-0 w-full h-full object-cover rounded-lg" /> */}
-            
-            <p className="font-body font-light text-dusty-blue/60 text-sm absolute z-10 text-center px-4">
-              [ Drop Space Photo Here ]
-            </p>
+            <img src="/bisou2.webp" alt="Interior BISOU" className="absolute inset-0 w-full h-full object-cover rounded-lg" />
           </div>
           
           <div className="font-accent italic text-dusty-blue text-[15px] mt-8 text-center">

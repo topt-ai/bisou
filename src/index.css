@@ -1,5 +1,21 @@
 @import "tailwindcss";
 
+@font-face {
+  font-family: 'Against';
+  src: url('/fonts/against-regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Aesthetic';
+  src: url('/fonts/Aesthetic-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 @theme {
   --color-cream: #e7dcd1;
   --color-near-black: #0a0a0a;
@@ -7,9 +23,9 @@
   --color-dusty-blue: #94b1c8;
   --color-white: #ffffff;
 
-  --font-display: "Playfair Display", Georgia, serif;
-  --font-accent: "Times New Roman", Times, serif;
-  --font-body: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-display: "Against", "Playfair Display", Georgia, serif;
+  --font-accent: "Aesthetic", "Times New Roman", Times, serif;
+  --font-body: "Jost", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 @layer base {

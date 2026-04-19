@@ -14,9 +14,7 @@ export function Footer() {
           {/* Column 1: Brand Base */}
           <div className="flex flex-col items-start w-full md:w-auto">
             <div className="relative block h-8 w-32 mb-4">
-              <img src="/images/logo-blanco.png" alt="BISOU" className="h-full w-full object-contain object-left relative z-10" onError={(e) => (e.currentTarget.style.display = 'none')} />
-              {/* Fallback structure */}
-              <span className="absolute inset-0 flex items-center font-display text-4xl uppercase tracking-widest text-white">BISOU</span>
+              <img src="/logo-blanco.png" alt="BISOU" className="h-full w-full object-contain object-left relative z-10" onError={(e) => (e.currentTarget.style.display = 'none')} />
             </div>
             <p className="font-body font-light text-white/50 text-[14px] mb-1">
               Munchies · Coffee · Desserts
