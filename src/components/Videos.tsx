@@ -2,7 +2,6 @@ import React, { useRef } from 'react';
 import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { Play } from 'lucide-react';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -10,48 +9,23 @@ export function Videos() {
   const sectionRef = useRef<HTMLElement>(null);
 
   useGSAP(() => {
-    // MatchMedia for mobile/desktop different behaviors
-    const mm = gsap.matchMedia();
-
-    mm.add('(min-width: 768px)', () => {
-      // Desktop stagger 3 phones
-      gsap.fromTo(
-        '.phone-frame',
-        { y: 80, opacity: 0 },
-        {
-          y: 0,
-          opacity: 1,
-          duration: 0.8,
-          stagger: 0.15,
-          ease: 'back.out(1.2)',
-          scrollTrigger: {
-            trigger: sectionRef.current,
-            start: 'top 75%',
-            once: true,
-          },
-        }
-      );
-    });
-
-    mm.add('(max-width: 767px)', () => {
-      // Mobile - single phone visible
-      gsap.fromTo(
-        '.phone-frame',
-        { y: 50, opacity: 0 },
-        {
-          y: 0,
-          opacity: 1,
-          duration: 0.8,
-          ease: 'power3.out',
-          scrollTrigger: {
-            trigger: sectionRef.current,
-            start: 'top 80%',
-            once: true,
-          },
-        }
-      );
-    });
-
+    // Stagger phones on both mobile and desktop
+    gsap.fromTo(
+      '.phone-frame',
+      { y: 80, opacity: 0 },
+      {
+        y: 0,
+        opacity: 1,
+        duration: 0.8,
+        stagger: 0.15,
+        ease: 'back.out(1.2)',
+        scrollTrigger: {
+          trigger: sectionRef.current,
+          start: 'top 75%',
+          once: true,
+        },
+      }
+    );
   }, { scope: sectionRef });
 
   return (
@@ -59,7 +33,7 @@ export function Videos() {
       <div className="max-w-[1200px] mx-auto text-center">
         
         {/* Section Header */}
-        <div className="mb-20">
+        <div className="mb-12 md:mb-20">
           <div className="font-accent italic text-dusty-blue text-[16px] mb-4">
             04 — Momentos
           </div>
@@ -68,25 +42,25 @@ export function Videos() {
           </h2>
         </div>
 
-        {/* Phones Layout */}
-        <div className="flex justify-center items-center gap-6">
+        {/* Phones Layout - horizontally scrollable on mobile */}
+        <div className="flex overflow-x-auto snap-x snap-mandatory no-scrollbar md:justify-center items-center gap-6 py-8 px-[10vw] md:px-0 mx-[-24px] md:mx-0 w-[calc(100%+48px)] md:w-full">
           
-          {/* Phone 1 (Hidden on mobile) */}
-          <div className="phone-frame hidden md:flex flex-col items-center justify-center w-[220px] aspect-[9/16] rounded-[32px] border-[3px] border-white/15 bg-white/[0.04] shadow-[0_24px_60px_rgba(0,0,0,0.5)] -rotate-[4deg] translate-y-[20px] transition-all duration-[400ms] hover:scale-104 hover:rotate-0 hover:border-white/40 cursor-pointer overflow-hidden relative group">
+          {/* Phone 1 */}
+          <div className="phone-frame shrink-0 snap-center flex flex-col items-center justify-center w-[280px] md:w-[220px] aspect-[9/16] rounded-[32px] border-[3px] border-white/15 bg-white/[0.04] shadow-[0_24px_60px_rgba(0,0,0,0.5)] md:-rotate-[4deg] md:translate-y-[20px] transition-all duration-[400ms] hover:scale-104 hover:rotate-0 hover:border-white/40 cursor-pointer overflow-hidden relative group">
             <video className="absolute inset-0 w-full h-full object-cover z-0" autoPlay muted loop playsInline>
               <source src="/videobisou1.mp4" type="video/mp4" />
             </video>
           </div>
 
-          {/* Phone 2 (Centered, visible on all) */}
-          <div className="phone-frame flex flex-col items-center justify-center w-[280px] md:w-[220px] aspect-[9/16] rounded-[32px] border-[3px] border-white/15 bg-white/[0.04] shadow-[0_24px_60px_rgba(0,0,0,0.5)] rotate-0 -translate-y-[10px] transition-all duration-[400ms] hover:scale-104 hover:border-white/40 cursor-pointer overflow-hidden relative group">
+          {/* Phone 2 */}
+          <div className="phone-frame shrink-0 snap-center flex flex-col items-center justify-center w-[280px] md:w-[220px] aspect-[9/16] rounded-[32px] border-[3px] border-white/15 bg-white/[0.04] shadow-[0_24px_60px_rgba(0,0,0,0.5)] rotate-0 md:-translate-y-[10px] transition-all duration-[400ms] hover:scale-104 hover:border-white/40 cursor-pointer overflow-hidden relative group">
             <video className="absolute inset-0 w-full h-full object-cover z-0" autoPlay muted loop playsInline>
               <source src="/videobisou2.mp4" type="video/mp4" />
             </video>
           </div>
 
-          {/* Phone 3 (Hidden on mobile) */}
-          <div className="phone-frame hidden md:flex flex-col items-center justify-center w-[220px] aspect-[9/16] rounded-[32px] border-[3px] border-white/15 bg-white/[0.04] shadow-[0_24px_60px_rgba(0,0,0,0.5)] rotate-[3deg] translate-y-[15px] transition-all duration-[400ms] hover:scale-104 hover:rotate-0 hover:border-white/40 cursor-pointer overflow-hidden relative group">
+          {/* Phone 3 */}
+          <div className="phone-frame shrink-0 snap-center flex flex-col items-center justify-center w-[280px] md:w-[220px] aspect-[9/16] rounded-[32px] border-[3px] border-white/15 bg-white/[0.04] shadow-[0_24px_60px_rgba(0,0,0,0.5)] md:rotate-[3deg] md:translate-y-[15px] transition-all duration-[400ms] hover:scale-104 hover:rotate-0 hover:border-white/40 cursor-pointer overflow-hidden relative group">
             <video className="absolute inset-0 w-full h-full object-cover z-0" autoPlay muted loop playsInline>
               <source src="/videobisou3.mp4" type="video/mp4" />
             </video>

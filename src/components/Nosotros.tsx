@@ -84,10 +84,10 @@ export function Nosotros() {
             ref={rightColRef}
             className="w-full max-w-[420px] aspect-[4/5] bg-cream rounded-lg relative flex items-center justify-center -rotate-2 overflow-hidden border-0 shadow-xl"
           >
-            <img src="/bisou2.webp" alt="Interior BISOU" className="absolute inset-0 w-full h-full object-cover rounded-lg" />
+            <img src="/bisou12.webp" alt="Interior BISOU" className="absolute inset-0 w-full h-full object-cover rounded-lg" />
           </div>
           
-          <div className="font-accent italic text-dusty-blue text-[15px] mt-8 text-center">
+          <div className="font-accent italic text-burgundy text-[15px] mt-8 text-center">
             Managua, Nicaragua
           </div>
         </div>

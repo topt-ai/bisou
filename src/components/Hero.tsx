@@ -41,7 +41,7 @@ export function Hero() {
   }, { scope: containerRef });
 
   return (
-    <section ref={containerRef} className="relative w-full h-[100dvh] bg-near-black overflow-hidden flex items-end px-[20px] md:px-[80px] pb-[80px]">
+    <section ref={containerRef} className="relative w-full h-[100dvh] bg-near-black overflow-hidden flex items-center md:items-end px-[20px] md:px-[80px] pb-[40px] md:pb-[80px]">
       {/* Background Image Container */}
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-[url('/hero-bg.webp')] bg-cover bg-center bg-no-repeat"></div>
@@ -86,7 +86,7 @@ export function Hero() {
         <p className="font-body text-[14px] leading-[1.6] opacity-80 mb-[20px]">
           Un espacio de coworking y encuentro donde el diseño y el sabor se integran para crear una experiencia única.
         </p>
-        <div className="font-accent italic text-dusty-blue text-[11px] cursor-pointer hover:opacity-80 transition-opacity">
+        <div className="font-accent italic text-burgundy text-[11px] cursor-pointer hover:opacity-80 transition-opacity">
           [ Ver más sobre nosotros ]
         </div>
       </div>
