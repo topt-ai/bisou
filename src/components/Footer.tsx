@@ -32,7 +32,7 @@ export function Footer() {
               Navegar
             </h4>
             <nav className="flex flex-col space-y-4">
-              {['Nosotros', 'Menú', 'Galería', 'Ubicación'].map((item) => (
+              {['Nosotros', 'Menú', 'Galería', 'Contacto'].map((item) => (
                 <a
                   key={item}
                   href={`#${item.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "")}`}

@@ -57,7 +57,7 @@ export function Navbar() {
 
           {/* Desktop Links */}
           <nav className="hidden md:flex items-center space-x-[32px]">
-            {['Nosotros', 'Menú', 'Galería', 'Ubicación'].map((item) => (
+            {['Nosotros', 'Menú', 'Galería', 'Contacto'].map((item) => (
               <a
                 key={item}
                 href={`#${item.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "")}`}
@@ -101,7 +101,7 @@ export function Navbar() {
           </button>
           
           <nav className="flex flex-col space-y-8">
-            {['Nosotros', 'Menú', 'Galería', 'Ubicación'].map((item) => (
+            {['Nosotros', 'Menú', 'Galería', 'Contacto'].map((item) => (
               <div key={item} className="overflow-hidden">
                 <a
                   href={`#${item.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "")}`}

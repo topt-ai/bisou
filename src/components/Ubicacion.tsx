@@ -51,19 +51,19 @@ export function Ubicacion() {
   }, { scope: sectionRef });
 
   return (
-    <section id="ubicacion" ref={sectionRef} className="bg-cream py-[120px] px-6 w-full">
+    <section id="contacto" ref={sectionRef} className="bg-cream py-[120px] px-6 w-full">
       <div className="max-w-[1200px] mx-auto flex flex-col md:flex-row gap-16 md:gap-20">
 
         {/* Left Column */}
         <div ref={leftColRef} className="w-full md:w-1/2 flex flex-col items-start pt-4">
           <div className="font-accent italic text-burgundy text-[16px] mb-4">
-            05 — Ubicación
+            05 — Contáctanos
           </div>
           <h2 className="font-display text-near-black text-[48px] md:text-[56px] leading-[1] mb-8">
             Ordena por WhatsApp
           </h2>
           <p className="font-body text-near-black/80 text-[17px] leading-[1.7] max-w-[460px] mb-12">
-            Puedes hacer tu pedido directamente por WhatsApp. Muy pronto podrás visitarnos en nuestro nuevo local en Las Colinas.
+            Puedes hacer tu pedido directamente por WhatsApp. Muy pronto podrás visitarnos en nuestro nuevo local.
           </p>
 
           <div className="flex flex-col space-y-8 mb-12">
@@ -111,7 +111,7 @@ export function Ubicacion() {
               Pedidos
             </div>
             <h3 className="font-display text-[40px] md:text-[48px] leading-[1] mb-6">
-              Hablemos por<br />WhatsApp
+              ¿Qué te gustaría<br />probar hoy?
             </h3>
             <p className="font-body font-light text-white/70 text-[15px] leading-[1.7] mb-10 max-w-[360px]">
               Escríbenos para tomar tu pedido, reservar o resolver cualquier duda. Te respondemos lo antes posible.
@@ -123,9 +123,8 @@ export function Ubicacion() {
               className="inline-flex items-center gap-3 bg-burgundy text-white font-body font-semibold text-[13px] uppercase tracking-[0.1em] px-8 py-4 rounded-full hover:opacity-90 transition-opacity"
             >
               <IconWhatsApp className="w-5 h-5" />
-              Escribirnos por WhatsApp
+              Ordena acá
             </a>
-            <span className="font-body text-white/40 text-[13px] mt-6">{SOCIALS.whatsappDisplay}</span>
           </div>
         </div>
 
