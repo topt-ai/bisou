@@ -1,7 +1,9 @@
 import React from 'react';
 import { IconInstagram } from './icons/IconInstagram';
 import { IconTikTok } from './icons/IconTikTok';
-import { IconWaze } from './icons/IconWaze';
+import { IconFacebook } from './icons/IconFacebook';
+import { IconWhatsApp } from './icons/IconWhatsApp';
+import { SOCIALS } from '../lib/socials';
 
 export function Footer() {
   return (
@@ -49,14 +51,17 @@ export function Footer() {
               Síguenos
             </h4>
             <div className="flex items-center space-x-6">
-              <a href="#" className="text-white hover:text-burgundy transition-colors" aria-label="Instagram">
+              <a href={SOCIALS.instagram} target="_blank" rel="noopener noreferrer" className="text-white hover:text-burgundy transition-colors" aria-label="Instagram">
                 <IconInstagram className="w-[22px] h-[22px]" />
               </a>
-              <a href="#" className="text-white hover:text-burgundy transition-colors" aria-label="TikTok">
+              <a href={SOCIALS.tiktok} target="_blank" rel="noopener noreferrer" className="text-white hover:text-burgundy transition-colors" aria-label="TikTok">
                 <IconTikTok className="w-[22px] h-[22px]" />
               </a>
-              <a href="#" className="text-white hover:text-burgundy transition-colors" aria-label="Waze">
-                <IconWaze className="w-[22px] h-[22px]" />
+              <a href={SOCIALS.facebook} target="_blank" rel="noopener noreferrer" className="text-white hover:text-burgundy transition-colors" aria-label="Facebook">
+                <IconFacebook className="w-[22px] h-[22px]" />
+              </a>
+              <a href={SOCIALS.whatsapp} target="_blank" rel="noopener noreferrer" className="text-white hover:text-burgundy transition-colors" aria-label="WhatsApp">
+                <IconWhatsApp className="w-[22px] h-[22px]" />
               </a>
             </div>
           </div>
