@@ -44,7 +44,15 @@ export function Hero() {
     <section ref={containerRef} className="relative w-full h-[100dvh] bg-near-black overflow-hidden flex items-center md:items-end px-[20px] md:px-[80px] pb-[40px] md:pb-[80px]">
       {/* Background Image Container */}
       <div className="absolute inset-0 z-0">
-        <div className="absolute inset-0 bg-[url('/hero-bg.webp')] bg-cover bg-center bg-no-repeat"></div>
+        <img
+          src="/hero-bg.webp"
+          alt=""
+          width={2400}
+          height={1600}
+          fetchPriority="high"
+          decoding="async"
+          className="absolute inset-0 w-full h-full object-cover"
+        />
         {/* Gradients to match HTML */}
         <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0acc] via-[#0a0a0a00] to-transparent bg-[length:100%_60%] bg-bottom bg-no-repeat"></div>
       </div>

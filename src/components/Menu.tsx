@@ -62,10 +62,14 @@ export function Menu() {
 
         {/* Menu Image Content */}
         <div ref={contentRef} className="w-full flex justify-center">
-          <img 
-            src="/bisou-menu-1.webp" 
-            alt="Menú Bisou" 
-            className="w-full max-w-[800px] h-auto object-contain rounded-sm" 
+          <img
+            src="/bisou-menu-1.webp"
+            alt="Menú Bisou"
+            width={1132}
+            height={1600}
+            loading="lazy"
+            decoding="async"
+            className="w-full max-w-[800px] h-auto object-contain rounded-sm"
           />
         </div>
 

@@ -47,40 +47,40 @@ export function Galeria() {
           
           {/* Row 1 */}
           <div className="gallery-item md:col-span-7 h-[350px] md:h-[500px] bg-cream rounded border-0 relative overflow-hidden group">
-            <img src="/bisou1.webp" alt="Galeria 1" className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+            <img src="/bisou1.webp" alt="Galeria 1" width={1024} height={1024} loading="lazy" decoding="async" className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
           </div>
           <div className="gallery-item md:col-span-5 h-[400px] md:h-[600px] md:translate-y-10 bg-cream rounded border-0 relative overflow-hidden group">
-            <img src="/bisou2.webp" alt="Galeria 2" className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+            <img src="/bisou2.webp" alt="Galeria 2" width={1536} height={1024} loading="lazy" decoding="async" className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
           </div>
 
           {/* Row 2 */}
           <div className="gallery-item md:col-span-4 h-[350px] md:h-[400px] bg-cream rounded border-0 relative overflow-hidden group mt-6 md:mt-0">
-            <img src="/bisou3.webp" alt="Galeria 3" className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+            <img src="/bisou3.webp" alt="Galeria 3" width={1024} height={1024} loading="lazy" decoding="async" className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
           </div>
           <div className="gallery-item md:col-span-8 h-[300px] md:h-[350px] md:-translate-y-[30px] bg-cream rounded border-0 relative overflow-hidden group mb-6 md:mb-0">
-            <img src="/bisou4.webp" alt="Galeria 4" className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+            <img src="/bisou4.webp" alt="Galeria 4" width={1024} height={1536} loading="lazy" decoding="async" className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
           </div>
 
           {/* Row 3 */}
           <div className="gallery-item md:col-span-3 h-[300px] md:h-[380px] bg-cream rounded border-0 relative overflow-hidden group">
-            <img src="/bisou5.webp" alt="Galeria 5" className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+            <img src="/bisou5.webp" alt="Galeria 5" width={1024} height={1024} loading="lazy" decoding="async" className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
           </div>
           <div className="gallery-item md:col-span-6 h-[300px] md:h-[420px] bg-cream rounded border-0 relative overflow-hidden group">
-            <img src="/bisou6.webp" alt="Galeria 6" className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+            <img src="/bisou6.webp" alt="Galeria 6" width={1536} height={1024} loading="lazy" decoding="async" className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
           </div>
           <div className="gallery-item md:col-span-3 h-[300px] md:h-[350px] md:rotate-1 md:translate-y-4 bg-cream rounded border-0 relative overflow-hidden group">
-            <img src="/bisou7.webp" alt="Galeria 7" className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+            <img src="/bisou7.webp" alt="Galeria 7" width={1600} height={2400} loading="lazy" decoding="async" className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
           </div>
 
           {/* Row 4 */}
           <div className="gallery-item md:col-span-5 h-[300px] md:h-[450px] bg-cream rounded border-0 relative overflow-hidden group mt-6 md:mt-0">
-            <img src="/bisou9.webp" alt="Galeria 9" className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+            <img src="/bisou9.webp" alt="Galeria 9" width={1600} height={2400} loading="lazy" decoding="async" className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
           </div>
           <div className="gallery-item md:col-span-4 h-[350px] md:h-[380px] md:-translate-y-8 bg-cream rounded border-0 relative overflow-hidden group mb-6 md:mb-0">
-            <img src="/bisou10.webp" alt="Galeria 10" className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+            <img src="/bisou10.webp" alt="Galeria 10" width={1600} height={1067} loading="lazy" decoding="async" className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
           </div>
           <div className="gallery-item md:col-span-3 h-[300px] md:h-[400px] md:translate-y-4 bg-cream rounded border-0 relative overflow-hidden group">
-            <img src="/bisou11.webp" alt="Galeria 11" className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+            <img src="/bisou11.webp" alt="Galeria 11" width={1600} height={1689} loading="lazy" decoding="async" className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
           </div>
 
         </div>

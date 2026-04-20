@@ -2,7 +2,7 @@
 
 @font-face {
   font-family: 'Against';
-  src: url('/fonts/against-regular.ttf') format('truetype');
+  src: url('/fonts/against-regular.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
   font-display: swap;

@@ -51,7 +51,7 @@ export function Navbar() {
           {/* Logo */}
           <div className="flex-shrink-0">
             <a href="#" onClick={(e) => { e.preventDefault(); window.scrollTo(0, 0); }} className="relative block">
-              <img src="/logo-negro.png" alt="bisou" className="h-[28px] object-contain logo-filter" />
+              <img src="/logo-negro.png" alt="bisou" width={128} height={32} decoding="async" fetchPriority="high" className="h-[28px] object-contain logo-filter" />
             </a>
           </div>
 
