@@ -49,7 +49,7 @@ export function Menu() {
   return (
     <section id="menu" ref={sectionRef} className="bg-near-black py-[120px] px-6 w-full text-white">
       <div className="max-w-[1000px] mx-auto">
-        
+
         {/* Header */}
         <div ref={headerRef} className="text-center mb-16">
           <div className="font-accent italic text-dusty-blue text-[16px] mb-4">

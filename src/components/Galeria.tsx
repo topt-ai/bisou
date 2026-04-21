@@ -2,6 +2,7 @@ import React, { useRef } from 'react';
 import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { Stamp } from './Stamp';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -29,17 +30,26 @@ export function Galeria() {
   }, { scope: sectionRef });
 
   return (
-    <section id="galeria" ref={sectionRef} className="bg-cream py-[120px] px-6 w-full">
-      <div className="max-w-[1200px] mx-auto">
-        
+    <section id="galeria" ref={sectionRef} className="relative bg-cream py-[120px] px-6 w-full">
+      <div className="relative max-w-[1200px] mx-auto">
+
         {/* Section Header */}
-        <div className="mb-16">
-          <div className="font-accent italic text-burgundy text-[16px] mb-4">
-            03 — Galería
+        <div className="flex items-end justify-between gap-6 mb-16">
+          <div>
+            <div className="font-accent italic text-burgundy text-[16px] mb-4">
+              03 — Galería
+            </div>
+            <h2 className="font-display text-near-black text-[52px] md:text-[64px] leading-[1]">
+              Cada detalle importa
+            </h2>
           </div>
-          <h2 className="font-display text-near-black text-[52px] md:text-[64px] leading-[1]">
-            Cada detalle importa
-          </h2>
+          <Stamp
+            size={130}
+            mark="rojo"
+            color="#620608"
+            text="HECHO CON CARIÑO · BISOU · MANAGUA · "
+            className="hidden md:block shrink-0 opacity-90"
+          />
         </div>
 
         {/* Asymmetric Editorial Grid */}

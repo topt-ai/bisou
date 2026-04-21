@@ -51,7 +51,7 @@ export function Navbar() {
           {/* Logo */}
           <div className="flex-shrink-0">
             <a href="#" onClick={(e) => { e.preventDefault(); window.scrollTo(0, 0); }} className="relative block">
-              <img src="/logo-negro.png" alt="bisou" width={128} height={32} decoding="async" fetchPriority="high" className="h-[28px] object-contain logo-filter" />
+              <img src="/isotipo-crema.webp" alt="BISOU" width={32} height={38} decoding="async" fetchPriority="high" className="h-[34px] w-auto object-contain" />
             </a>
           </div>
 
@@ -92,9 +92,16 @@ export function Navbar() {
 
       {/* Full Screen Mobile Menu Overlay */}
       {menuOpen && (
-        <div className="fixed inset-0 z-[100] bg-near-black text-white p-6 flex flex-col justify-center pointer-events-auto">
+        <div className="fixed inset-0 z-[100] bg-near-black text-white p-6 flex flex-col justify-center pointer-events-auto overflow-hidden">
+          {/* Decorative isotipo watermark */}
+          <img
+            src="/isotipo-rojo.webp"
+            alt=""
+            aria-hidden="true"
+            className="absolute -bottom-20 -right-16 w-[420px] opacity-[0.07] pointer-events-none select-none"
+          />
           <button
-            className="absolute top-8 right-8 text-white/50 hover:text-white transition-colors"
+            className="absolute top-8 right-8 text-white/50 hover:text-white transition-colors z-10"
             onClick={() => setMenuOpen(false)}
           >
             <X className="w-8 h-8" />

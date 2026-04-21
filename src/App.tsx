@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import Lenis from 'lenis';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
@@ -11,11 +11,23 @@ import { Galeria } from './components/Galeria';
 import { Videos } from './components/Videos';
 import { Ubicacion } from './components/Ubicacion';
 import { Footer } from './components/Footer';
+import { Splash } from './components/Splash';
 
 gsap.registerPlugin(ScrollTrigger);
 
 export default function App() {
   const lenisRef = useRef<Lenis | null>(null);
+
+  // Splash gates the Hero choreography. Only plays once per tab.
+  const [isLoaded, setIsLoaded] = useState<boolean>(() =>
+    typeof window !== 'undefined' &&
+    window.sessionStorage.getItem('bisou_splash_seen') === '1'
+  );
+
+  const handleSplashDone = () => {
+    window.sessionStorage.setItem('bisou_splash_seen', '1');
+    setIsLoaded(true);
+  };
 
   useEffect(() => {
     // Initialize Lenis
@@ -59,8 +71,9 @@ export default function App() {
 
   return (
     <div className="relative w-full min-h-screen bg-near-black">
+      {!isLoaded && <Splash onComplete={handleSplashDone} />}
       <Navbar />
-      <Hero />
+      <Hero isLoaded={isLoaded} />
       <Nosotros />
       <Menu />
       <Galeria />

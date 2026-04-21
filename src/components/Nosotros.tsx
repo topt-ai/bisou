@@ -48,8 +48,17 @@ export function Nosotros() {
   }, { scope: sectionRef });
 
   return (
-    <section id="nosotros" ref={sectionRef} className="bg-cream py-[120px] px-6 w-full overflow-hidden">
-      <div className="max-w-[1200px] mx-auto flex flex-col md:flex-row items-center gap-16 md:gap-20">
+    <section id="nosotros" ref={sectionRef} className="relative bg-cream py-[120px] px-6 w-full overflow-hidden">
+      {/* Subtle isotipo watermark */}
+      <img
+        src="/isotipo-rojo.webp"
+        alt=""
+        aria-hidden="true"
+        loading="lazy"
+        decoding="async"
+        className="absolute -left-32 -bottom-24 w-[520px] opacity-[0.05] pointer-events-none select-none hidden md:block"
+      />
+      <div className="relative max-w-[1200px] mx-auto flex flex-col md:flex-row items-center gap-16 md:gap-20">
         
         {/* Left Column (55%) */}
         <div ref={leftColRef} className="w-full md:w-[55%] flex flex-col items-start">

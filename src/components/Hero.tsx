@@ -2,12 +2,19 @@ import React, { useRef } from 'react';
 import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
 import { SplitText } from './SplitText';
+import { Stamp } from './Stamp';
 
-export function Hero() {
+export function Hero({ isLoaded = true }: { isLoaded?: boolean }) {
   const containerRef = useRef<HTMLDivElement>(null);
 
   useGSAP(() => {
-    const tl = gsap.timeline({ delay: 0.2 });
+    // Always pre-hide hero content so nothing flashes before the splash clears.
+    gsap.set('.hero-eyebrow, .hero-sub, .hero-cta', { y: 20, opacity: 0 });
+    gsap.set('.split-headline .char', { y: 50, opacity: 0 });
+    gsap.set('.hero-stamp', { opacity: 0, scale: 0.9 });
+
+    if (!isLoaded) return;
+    const tl = gsap.timeline({ delay: 0.1 });
 
     tl.fromTo(
       '.hero-eyebrow',
@@ -37,8 +44,13 @@ export function Hero() {
         { y: 20, opacity: 0 },
         { y: 0, opacity: 1, duration: 0.8, ease: 'power3.out' },
         '-=0.7'
+      )
+      .to(
+        '.hero-stamp',
+        { opacity: 0.9, scale: 1, duration: 0.9, ease: 'power3.out' },
+        '-=0.6'
       );
-  }, { scope: containerRef });
+  }, { scope: containerRef, dependencies: [isLoaded] });
 
   return (
     <section ref={containerRef} className="relative w-full h-[100dvh] bg-near-black overflow-hidden flex items-center md:items-end px-[20px] md:px-[80px] pb-[40px] md:pb-[80px]">
@@ -58,6 +70,11 @@ export function Hero() {
       </div>
 
       <div className="location-tag absolute top-[120px] left-[80px] font-accent italic text-dusty-blue text-[14px] uppercase tracking-[0.2em] -rotate-90 origin-top-left -translate-x-full hidden md:block">Managua, Nicaragua</div>
+
+      {/* Branded quality stamp */}
+      <div className="hero-stamp absolute top-[110px] right-[60px] z-10 hidden md:block opacity-90">
+        <Stamp size={150} mark="crema" color="#e7dcd1" text="BISOU · MUNCHIES · COFFEE · DESSERTS · " />
+      </div>
 
       {/* Content */}
       <div className="relative z-10 w-full max-w-[600px] text-left">
